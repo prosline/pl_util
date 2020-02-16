@@ -79,6 +79,7 @@ func NewUserBadRequest(message string) RestErr {
 		error:   "user_already_exists",
 	}
 }
+
 func NewInternalServerError(message string,err error) RestErr {
 	ret := restErr{
 		message: message,
